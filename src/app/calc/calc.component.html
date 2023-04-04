@@ -1,8 +1,18 @@
+
 <form>
   <input name="num1" type="number" [(ngModel)]="num1" >
   <input name="num2" type="number" [(ngModel)]="num2" >
-  <button type="button" (click)="calc()">
+  <button type="button" (click)="calc('+')">
     somar
+  </button>
+  <button type="button" (click)="calc('-')">
+    subtrair
+  </button>
+  <button type="button" (click)="calc('/')">
+    dividir
+  </button>
+  <button type="button" (click)="calc('*')">
+    multiplicar
   </button>
   <input name="result" [(ngModel)]="result" disabled>
 </form>
